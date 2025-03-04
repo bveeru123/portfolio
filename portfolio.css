@@ -1,0 +1,546 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color:yellow;
+    overflow-x: hidden; /* Disables horizontal scrolling (left to right) */
+    overflow-y: auto;   /* Ensures vertical scrolling is still enabled */
+    background-image: url("imagesss/back.jpg");
+    background-size:contain;
+}
+h1{
+    font-family: "Noto Serif", serif;
+    cursor: default;
+}
+nav {
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   margin:20px 20px 20px 20px;
+    
+  
+}
+.left{
+    color:white;
+}
+
+.navbar ul li {
+   list-style: none;
+   display:inline-block;
+   margin:0 15px;
+   position: relative;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    color:white
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background:rgb(255, 255, 255);
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 1s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.firstsection{
+    display:flex;
+    
+    justify-content: space-around;
+    height:100vh;
+    margin:30px 0;
+}
+.leftsection{
+    background-color:transparent;
+    color: white;
+    margin-top:12%;
+    margin-left: 10%;
+   
+    width:50%
+}
+.leftsection h1,h2{
+    font-size: 40px;
+    font-weight: 50%;
+    margin-bottom: 10px;
+}
+.leftsection span{
+    color: red;
+}
+.btn{
+   border: 2px solid red;
+   border-radius: 30px;
+   padding:8px;
+   background-color: black;
+   color:red;   
+   font-weight: bold;
+   font-size: 15px;
+   margin-top: 20px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:5px
+}
+.btn:hover{
+    box-shadow:2px 2px 10px red;
+    transform: translateY(-3px);
+    transition: 0.5s;
+    
+}
+.rightsection{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-size:cover;
+    background-position:center;
+    color: red;
+    height:70vh;
+    margin-right:40px;
+    border: 2px soild black;
+    border-radius: 50px;
+    width:30%;
+}
+
+.rightsection img{
+    width:100%;
+    border-radius: 30px;
+    object-fit: contain;
+}
+.secondsection{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:93px 0px;
+    height:100vh;
+}
+.secondleft{
+    background-color:rgb(201, 180, 180);
+    color:black;
+    border:2px solid rgb(255, 255, 255); 
+    border-radius: 30px;  
+    height:90vh;
+    width:70%;
+}
+.secondleft h1{
+    color:black;
+    padding:10px 0px 10px 40%;
+    font-size: 40px;
+}
+.secondleft p{
+   padding:0px 10%  10px 10%;
+   font-size: 20px;
+   font-family: "Mulish", sans-serif;
+   
+}
+.secondleft h2{
+    font-size: 41px;
+    padding:50px 20% 50px 20%;
+    font-weight:bold;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+   
+    
+    
+}
+.secondleft h3{
+    padding :19px 10% 0px 10%;
+    font-family: "Mulish", sans-serif;
+    font-weight: normal;
+    
+}
+
+.thirdsection{
+min-height: 100vh;
+width:100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+
+   
+   
+}
+.skills {
+    height: 600px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    box-shadow:3px 3px 10px red;
+    background-color: black;
+    margin: 0px 40px;
+   
+}
+.skills:hover{
+    box-shadow:5px 5px 40px red;
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 50px;
+    list-style: none;
+    
+}
+.skills ul li p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+
+.skills ul li img{
+    height: 120px;
+    width: 180px;
+    object-fit: contain;
+    transform: translateX(110px);
+}
+
+.Projects{
+    height:130vh;
+    width:100%;
+    backdrop-filter: blur(5px); /* Blurs everything behind it */
+    
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.Projects h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.prc1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.prc1 h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 10px; 
+    font-family: sans-serif;
+}
+
+
+
+.projectssec a img{ 
+height:40vh;
+width:30vw;
+object-fit: contain;
+backdrop-filter: blur(10px); /* Blurs everything behind it */
+background: rgba(255, 255, 255, 0.001); /* Light transparent overlay */
+margin-top: 20vh;
+cursor: pointer;
+border: 2px solid white;
+border-radius: 20px;
+}
+.prc2 a img{
+    height:40vh;
+width:30vw;
+object-fit: contain;
+backdrop-filter: blur(10px); /* Blurs everything behind it */
+background: rgba(255, 255, 255, 0.001); /* Light transparent overlay */
+margin-top: 20vh;
+cursor: pointer;
+border: 2px solid white;
+border-radius: 20px;
+margin-left: 50px;
+
+}
+.prc2 h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-left: 70px; 
+    font-family: sans-serif;
+}
+
+.fifthsection{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0px 50px;
+    
+}
+.contactleft{
+    flex-basis: 35%;
+    padding:50px 110px;
+    color:white;
+    background-color:black;
+    
+   
+    box-shadow:2px 2px 10px red;
+   height:40vh;
+   border-radius: 10px;
+   line-height: 50px;
+}
+.contactleft:hover{
+    box-shadow:5px 5px 40px red;
+    transform: translateY(5px);
+    transition: 0.5s;
+
+}
+
+.contactright{
+    flex-basis: 60%;
+    padding-left:17%;
+    padding-top: 4%;
+}
+.contactleft p{
+   
+    font-size:20px;
+}
+.contactleft p i{
+    color:white;
+    margin-right: 6px;
+    font-size: 20px;
+}
+.contactright p {
+    font-size: 50px;
+}
+textarea{
+    resize: none;
+}
+
+.socialicons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;;
+    display: inline-block;
+    transition:transform 0.5s;
+}
+.socialicons a:hover{
+    transform: translateY(-3px);
+}
+.contactright form{
+    width:100%
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding:15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn1{
+    border: 2px solid red;
+    border-radius: 30px;
+    padding:10px 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: black;
+    color:red;   
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    
+ }
+ 
+ .copyright{
+    color: white;
+    width:100%;
+   text-align: center;
+    padding:10px 0px;
+    background:  #262626;
+    font-size: 15px;
+ }
+
+
+
+
+
+ /*----------------------------responsive-------------------------------*/
+ nav .fa-solid{
+    display: none;
+ }
+ @media only screen and (max-width:600px){
+    .firstsection{
+        position: relative;
+        display: block;
+        
+
+    }
+    .rightsection{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        height: 100vh;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        z-index: 0;
+    }
+    .rightsection img{
+        height:98%;
+        width:100%;
+        object-fit: cover;
+    }
+    .leftsection{
+        margin: 0;
+        background-color: transparent;
+        width: 100%;
+        padding-left: 20px;
+       
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+    }
+    .leftsection h1{
+        font-size: 20px;
+    }
+    .leftsection h2{
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 9px;
+        padding:1px 6px;
+    }
+    .btn:hover{
+        box-shadow:2px 2px 10px red;
+        transform: translateY(-3px);
+    }
+    .btn span{
+        font-size: 25px;
+    }
+    nav .fa-solid{
+        display:block;
+     }
+     nav ul{
+        background:black;
+        position: fixed;
+        width:200px;
+        top: 0;
+        right:-250px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+       
+     }
+     nav ul li a{
+        display: block;
+        margin: 25px;
+     }
+     nav ul .fa-solid{
+        position:absolute;
+        top:25px;
+        left:10px;
+        cursor: pointer;
+     }
+     .secondleft{
+        width: 90%;
+        height:70vh;
+
+     }
+     .secondleft h1{
+        font-size: 14px;
+    }
+    .secondleft p{
+        font-size: 14px;
+        
+    }
+    .secondleft h2{
+        font-size: 17px;
+        padding:1px 40px
+    }
+    .secondleft h3{
+        font-size: 13px;
+        padding-top: 1px;
+    }
+    .skills{
+        margin-bottom: 30px;
+    }
+    .skills ul li img{
+        transform: translateX(60px);
+    }
+    
+    .fifthsection{
+        flex-direction: column;
+    }
+    .contactleft{
+        
+        padding:10px 10px;
+        font-size: 14px;
+        width:116%;
+        line-height: 60px;
+    }
+    .contactleft p{
+        font-size: 21px;
+    }
+    .contactright{
+        padding-left: 0px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .contactright form{
+        width: 100%;
+    }
+    .contactright, .btn1{
+        margin-left: 1px;
+        margin-top: 5px;
+        margin-bottom: 18px;
+    }
+    /*---------------------------- project section responsive-------------------------------*/
+    .Projects
+    {
+        height: 150vh;
+    }
+     .Projects h1{
+        height:10px;
+        font-size: 36px;
+        padding: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+     }
+     .prc1{
+        display:flex;
+        flex-direction: column  ;
+     }
+     .projectssec{
+        height:54vh;
+     }
+     .projectssec a img {
+        height: 34vh;
+        width: 80vw;
+        margin-top: 13vh;
+     }
+     .prc2 a img{
+        height: 40vh;
+        width: 81vw;
+        margin-top: 13vh;
+        margin-left: 34px;
+     }
+     .prc2 h2 {
+        padding-left: 15px;
+        font-size: 30px;
+     }
+}
